@@ -1,0 +1,308 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    background-color: #d4f1ea;  
+}
+
+.navbar{
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #d4f1ea;
+}
+
+#category{
+  padding: 5% 6%;
+  /* border: 2px solid red; */
+}
+#product-cards{
+  padding: 5% 10%;
+  /* border: 2px solid red; */
+}
+
+#footer{
+ margin-bottom: 2%;
+ margin-top: 2%;
+  
+}
+.filter-btns{
+  text-align: center;
+}
+.filter-btn{
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #d22828;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.filter-btn::after{
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #555;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out
+}
+.filter-btn:hover{
+  color: #555;
+}
+.filter-btn:hover::after{
+  width: 100%;
+}
+/* active button */
+.active-btn{
+  color: #555;
+}
+.active-btn::after{
+  width: 100%;
+}
+
+.canvas-title{
+  text-align: center;
+}
+
+
+
+/*     Shopping Cart     */
+
+ .btn-purchase{
+   text-align: center;
+   margin: auto;
+   padding: 2%;
+   width: 50%;
+ }
+
+ #shopping-cart{
+   padding: 5% 5%;
+ }
+
+ .cart-total{
+   text-align: right;
+   font-size: 1.3rem;
+ }
+
+.up-icon{
+   color: black;
+   position: fixed;
+   float: right;
+   z-index: 1;
+   left: 95%;
+   top: 85%;
+   font-size: 2rem;
+ }
+
+
+ /* Form Section */
+
+
+
+/* .mainContainer{
+    border: 2px solid red;
+
+} */
+
+.contactHeading{
+  /* height: 150px; */
+  width:100%;
+  /* border: 2px solid red; */
+  color: #063d22;
+  display: flex;
+  flex-wrap: nowrap;
+  /* background-color: #f4f5e5; */
+  justify-content: center;
+}
+
+.contactHeading > div{
+  /* height: 45px; */
+  /* border: 2px solid green; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contactHeading > div > span{
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.contactHeading > div > p{
+  display: block;
+  text-align: center;
+  font-weight: initial;
+  margin-top:20px;
+  font-size: 20px;
+}
+
+
+
+@media screen and (max-width:600px) {
+  #product-cards{
+    padding: 5% 10%;
+    /* border: 2px solid red; */
+    margin-top:60px;
+
+  }
+  
+}
+
+/* Form Container */
+
+
+.formContainer{
+  /* border: 2px solid green; */
+  /* height: 600px; */
+  /* background-color: #f4f5e5; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width:100%;
+
+}
+
+.formContainer > div{
+  /* height: 400px; */
+  width:450px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* border: 2px solid red; */
+}
+
+
+.inputText{
+  height: 80px;
+  width:80%;
+  /* border: 2px solid purple; */
+  margin-left:10%;
+  margin-top: 5px;
+  
+}
+
+.inputText > label{
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.inputText > label > span{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  /* color:#b6b6b6; */
+  /* color: red; */
+}
+
+
+.greenAlert{
+  color:green;
+}
+
+.redAlert{
+  color: red;
+}
+
+
+
+.inputText > input{
+  display: inline-block;
+  height: 40px;
+  width:100%;
+  margin-top:5px;
+  font-size: 16px;
+  font-style: oblique;
+
+}
+
+.inputTextarea{
+  /* height: 200px; */
+  width:100%;
+  /* border: 2px solid purple; */
+  margin-top: 5px;
+}
+
+.inputTextarea > label{
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.inputTextarea > textarea{
+  height: 100px;
+  width:100%;
+  margin-top:5px;
+  font-size: 16px;
+  font-style: oblique;
+}
+
+.inputTextarea > label > span{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  /* color:#b6b6b6; */
+
+}
+
+.submitBtn{
+  height: 80px;
+  width:100%;
+  /* border: 2px solid purple; */
+  margin-top: 5px;
+  text-align: center;
+}
+
+.submitBtn > input{
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  height: 45px;
+  width:100px;
+  font-size: 18px;
+  background-color: #dddb22;
+  color:#063d22;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitBtn > input:hover{
+  background-color: #3d8272;
+  color: black;
+}
+
+
+
+@media  screen and (max-width:600px) {
+  
+.formContainer > div{
+  /* height: 400px; */
+  width:350px;
+  /* border: 2px solid red; */
+  /* background-color: #063d22; */
+}
+
+  
+}
+
+
+
+
+
+
